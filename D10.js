@@ -137,6 +137,21 @@ function spliptMe(frase){
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
+
+/* RISPOSTA
+*/
+function deleteOne(stringa,booleano) {if (booleano === true) {
+  return stringa.slice(1)
+  
+} else { 
+  return stringa.slice(0, -1)
+  
+}
+  
+}
+
+console.log(deleteOne("Matilda", false));
+
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
