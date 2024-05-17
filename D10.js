@@ -158,13 +158,48 @@ console.log(deleteOne("Matilda", false));
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+
+/* RISPOSTA
+*/
+
+function onlyLetters(parametro) { if (condition) {
+  
+} else {
+  
+}
+  
+}
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+/* RISPOSTA
+*/
+function isThisAnEmail(strings) { if (strings.includes("@")) {
+  return true
+  
+} else {
+  return false
+} 
+}
+
+console.log(isThisAnEmail("akakakakgmail.com"));
+
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+
+/* RISPOSTA
+*/
+
+function whatDayIsIt() {
+  const nuovaData = new Date();
+  return nuovaData
+  
+}
+
+console.log(whatDayIsIt())
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -179,13 +214,58 @@ console.log(deleteOne("Matilda", false));
   }
 */
 
+/* RISPOSTA
+*/
+
+function rollTheDices(numero) {
+  for (let i = numero; i < array.length; i++) {
+
+
+    
+    
+  }
+  
+}
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+
+/* RISPOSTA
+*/
+function howManyDays(data) {
+  let dataOggi = new Date()
+
+  let dataRicevuta = new Date(data)
+
+  let differenzaGiorni = dataOggi - dataRicevuta
+
+  let conversioneDifferenzaGiorni = differenzaGiorni / (1000 * 60 * 60 * 24)
+
+  return conversioneDifferenzaGiorni
+
+}
+console.log(howManyDays("2023-01-01"));
+
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+/* Risposta*/
+
+function isTodayMyBirthday(birthday) {
+  if (birthday === "1999-09-19") {
+    return true
+    
+  } else {
+    
+    return false
+  }
+  
+}
+
+console.log(isTodayMyBirthday("1999-09-18"));
 
 // Arrays & Oggetti
 
