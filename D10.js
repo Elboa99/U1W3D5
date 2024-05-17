@@ -34,13 +34,36 @@ console.log(random);
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
 
+/* RISPOSTA
+*/
+ const me = {
+ name: "Kenny" ,
+ surname : "Boateng" ,
+ age : 24,
+ }
+ 
+ console.log(me);
+
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
 
+/* RISPOSTA
+*/
+delete me.age
+console.log(me);
+
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
+
+/* RISPOSTA
+*/
+const skills = ["HTML", "CSS","JS"]
+
+me.skills = skills
+console.log(me);
+
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
