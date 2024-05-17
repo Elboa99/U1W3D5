@@ -69,9 +69,22 @@ console.log(me);
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
+/* RISPOSTA
+*/
+
+me.skills.push("nuovo oggetto")
+console.log(me);
+
+
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+
+/* RISPOSTA
+*/
+
+me.skills.pop()
+console.log(me);
 
 // Funzioni
 
@@ -79,15 +92,45 @@ console.log(me);
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 
+function dice() {
+  const number = Math.floor(Math.random()*6)+1
+return number
+}
+
+console.log(dice() );
+
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+/* RISPOSTA
+*/
+function WhoIsBigger(num1,num2){
+  if (num1 > num2) {
+    return num1
+    
+  } else {
+    return num2
+    
+  }
+}
+  
+console.log(WhoIsBigger(4,7));
+
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
+
+/* RISPOSTA
+*/
+
+function spliptMe(frase){
+  return frase.split(" ") 
+}
+ console.log(spliptMe("Amo il Calcio"));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
